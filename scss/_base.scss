@@ -1,6 +1,7 @@
 $color-pink: deeppink;
 $color-tirkiz: turquoise;
 $color-gray: lightgray;
+$color-light-gray: #f8f8f8;
 
 $font-cute: 'Cute Font', cursive;
 $font-nunito:  'Nunito', sans-serif;
@@ -47,11 +48,11 @@ body {
     border-radius: 5px;
 }
 
-//.underline {
-//    display: block;
-//    height: 3px;
-//    width: 150px;
-//    background: #222;
-//    margin-bottom: 20px;
-//}
+.underline {
+    display: block;
+    height: 1px;
+    width: 120px;
+    background: $color-gray;
+    margin-bottom: 20px;
+}
 
