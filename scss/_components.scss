@@ -1,0 +1,173 @@
+/******** 
+header 
+*********/
+header {
+    background-image: url(../img/header.jpg);
+    @include bg-image;
+    height: 100vh;
+    
+    /* nav */
+    nav {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-family: $font-cute;
+            font-size: 4rem;
+        }
+
+        .topnav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                margin-left: 50px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    list-style: none;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                }
+
+            }
+
+        }
+
+    }
+    
+    /* baner */
+    .baner {
+        @include container;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        height: 90%;
+
+        h1 {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.4);
+            width: 50%;
+            padding: 20px;
+            font-size: 4rem;
+            text-align: center;
+            color: white;
+        }
+
+        p {
+            width: 50%;
+            font-size: 1.3rem;
+            color: white;
+            text-align: right;
+            padding: 20px 0;
+        }
+
+        button {
+            @include button;
+            background: $color-pink;  
+            color: white;
+            border: 2px solid white;
+            transition: 0.4s ease;
+
+            &:hover {
+                background: $color-tirkiz;
+                color: black;
+            }
+
+        }
+
+        /* social icons */
+        .icons {
+            width: 50%;
+            padding: 20px 0;
+            a {
+                color: white;
+                font-size: 1.8rem;
+                padding: 20px;
+            }
+
+            a:hover {
+                color: $color-pink;
+            }
+
+        }
+        .icons:before {
+            display: inline-block;
+            content: "";
+            width: 140px;
+            height: 3px;
+            background: white;
+            position: relative;
+            top: -10px;
+        }
+        .icons:after {
+            display: inline-block;
+            content: "";
+            width: 140px;
+            height: 3px;
+            background: white;
+            position: relative;
+            top: -10px;
+        }
+
+    }
+    
+}
+
+/******** 
+love 
+*********/
+.love {
+    @include container;
+    padding: 50px 0;
+    display: flex;
+    
+    .col {
+        margin: 20px;
+    }
+    
+    .col1 {
+        flex: 7;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        
+        h3 {
+            font-size: 2.5rem;
+            text-align: left;
+            color: $color-pink;
+        }
+        
+    }
+    
+    .col2 {
+        flex: 2;
+        background-image: url(../img/hummingbird-1823829_640.jpg);
+        height: 300px;
+        @include bg-image;
+        @include boxShadow;
+    }
+    
+    .col3 {
+        flex: 3;
+        background-image: url(../img/kerala-4051412_640.jpg);
+        height: 300px;
+        @include bg-image;
+        @include boxShadow;
+    }
+    
+}
+
+
+
+
+
+
+
