@@ -308,6 +308,208 @@ beautiful
 }
 
 
+/******** 
+cta
+*********/
+.cta {
+    padding: 50px 0;
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/animal-color-colorful-416166.jpg);
+    height: 500px;
+    @include bg-image;
+    
+    .container {
+        @include container;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        padding: 0 100px;
+        
+        h2 {
+            font-size: 3rem;
+            color: $color-pink;
+        }
+        
+        p {
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            padding: 30px 0;
+        }
+            
+        button {
+            @include button;
+            border: 2px solid $color-pink;
+            background: transparent;
+            color: white;
+            margin: 10px;
+        }
+        
+    }
+    
+}
+
+
+/******** 
+choose us
+*********/
+.choose-us {
+    
+    padding: 50px 0;
+    
+    .container {
+        display: flex;
+        @include container;
+
+        .left {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                font-size: 4rem;
+                color: $color-pink;
+                text-shadow: 0 0 10px gray;
+            }
+            
+            .description {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .boxes {
+                display: flex;
+                padding-top: 40px;
+                text-align: center;
+                
+                h5 {
+                    color: white;
+                    font-size: 2rem;
+                }
+                
+                i {
+                    font-size: 3rem;
+                    color: white;
+                }
+                
+                .box1 {
+                    background: $color-pink;
+                    flex: 1;
+                    height: 200px;
+                    margin: 0 15px 15px 15px;
+                    padding: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                }
+                
+                .box2 {
+                    background: $color-tirkiz;
+                    margin: 40px 15px 15px 15px;
+                    padding: 30px;
+                    flex: 1;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                }
+                
+                .box3 {
+                    background: $color-pink;
+                    margin: 80px 15px 15px 15px;
+                    padding: 30px;
+                    flex: 1;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                }
+                
+                .box4 {
+                    background: $color-tirkiz;
+                    margin: 120px 15px 15px 15px;
+                    padding: 30px;
+                    flex: 1;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                }
+                
+            }
+
+        }
+
+        .right {
+            flex: 1;
+            background-image:url(../img/parrot.jpg);
+            height: 600px;
+            @include bg-image;
+        }
+
+    }
+    
+}
+
+/******** 
+people
+*********/
+.people {
+    background-image: linear-gradient($color-pink, $color-tirkiz);
+    padding: 100px 0;
+    
+    h2 {
+        font-size: 4rem;
+        color: white;
+        text-shadow: 0 0 10px gray;
+        text-align: center;
+    }
+    
+    .container {
+        @include container;
+        display: flex;
+        
+        .person {
+            margin: 20px;
+            text-align: center;
+            flex: 1;
+            
+            img {
+                width: 50%;
+                border-radius: 50%;
+                box-shadow: 0 0 10px black;
+                margin: 20px 0;
+            }
+            
+            h3 {
+                background: rgba(255, 255, 255, 0.4);
+                padding: 10px 0;
+                color: $color-pink;
+                text-shadow: 0 0 4px white;
+                font-size: 2.5rem;
+            }
+            
+            p {
+                color: white;
+            }
+            
+        }
+    }
+    
+}
+
+
+
+
+
+
 
 
 
