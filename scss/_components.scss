@@ -505,6 +505,67 @@ people
     
 }
 
+/******** 
+newsletter
+*********/
+.newsletter {
+    margin: 50px auto;
+    width: 50%;
+    
+    form {
+        
+        input {
+            border: 1px solid $color-pink;
+            width: 450px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        button {
+            padding: 13px;
+            background: $color-pink;
+            width: 150px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.3rem;
+            position: relative;
+            top: 3px;
+            letter-spacing: 2px;
+        }
+        
+    }
+    
+}
+
+
+/******** 
+footer
+*********/
+footer {
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/footer.jpg);
+    @include bg-image;
+    height: 500px;
+    
+    .container {
+        @include container;
+        
+        h3 {
+            font-size: 2rem;
+            color: $color-pink;
+        }
+        
+        p {
+            color: white;
+        }
+        
+        li {
+            color: white;
+            list-style: none;
+        }
+        
+    }
+}
 
 
 
